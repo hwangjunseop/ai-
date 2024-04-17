@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0417과제</title>
+<style>
+    .button {
+        color: aqua;
+        font-size: 20px;
+        font-weight: bold;
+
+        background-color: blue;
+
+        border: none;
+        border-radius: 10px;
+
+        width: 175px;
+        height: 50px;
+
+        margin: 15px;
+    }
+</style>
+</head>
+<body>
+    <h2>버튼클릭에 따른 이미지 슬라이드</h2>
+
+    <button class="button" id="b1">1</button>
+    <button class="button" id="b1">2</button>
+    <button class="button" id="b1">3</button>
+    <br>
+
+    <img id="img" src="https://i.namu.wiki/i/ec0aWd_Sy0Kl6qMlnbEusxLqlrOYnUhNZ72JM_Lldw4Jt5PGkDS48vpp2ykK0yWtAM4pyKm0tvp_Smg70QWhWQAcFNg8NMjQAU354VoKZt6rKFSClnMz25cK0h16Q-McKIeGjH1m7DfvAXbCxA19PQ.webp" alt="">
+
+    <script>
+        let b1 = document.querySelector('#b1')
+        let b2 = document.querySelector('#b2')
+        let b3 = document.querySelector('#b3')
+
+        let img = document.querySelector('#img')
+
+        b1.addEventListener('click', () => {
+            img.src = https://i.namu.wiki/i/bw6J8jTiON61frF4zifnld6mtWsQxDhf_RRt7lQEoAveKirh-BD_GYY6RH7e_kBG-pqiRiGk9yep7GCs4T3N5TYf8y7zjrikjkMbNvlawaIE2EsSn3akYIo0GIpZ2Igbn8l5VHhYS3qveajtpXOT9g.webp
+        });
+
+        b2.addEventListener('click', () => {
+            img.src = https://i.namu.wiki/i/p1hlLBtqPxdeO_UxxI342j1hDyPSEs0JsRiU-HeEX_g3O22O62wqxlaqcMXjFk2UBv680aiPZa9xV32gdrHvHxmcL5b8nVeOgcqz8c7xKRLNwic501nPMzNRXrTWvX3H1KjsOTNo8s2eUKDUIfRfZQ.webp
+        });
+
+        b3.addEventListener('click', () => {
+            img.src = https://i.namu.wiki/i/fxTNswYAXHf02NjFLX38Vvk9GZUriPOygqZnAJYsxC3U2qYyBzet8dqjWA6uX9vDocMky7Ch8eiIcV1eW2IcmymV24umRWPnMpwn1cYNKOGPu0HXVPKJPdPRNpSgBeeFD9bTnhvgLgeMfo4wZHikiQ.webp
+        });
+    </script>
+</body>
+</html>

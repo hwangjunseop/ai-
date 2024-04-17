@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0417속성조작</title>
+</head>
+<body>
+    <img id="img" src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202306/11/30263940-1f56-4a40-b5e2-c22c9ad7abc8.jpg" alt="이미지 안나옴" width="450px">
+
+    <script>
+        // 순서1. 원하는 태그 지정
+        let 이미지
+        이미지 = document.querySelector("#img")
+        console.log(이미지)
+        // 순서2. 원하는대로 조작
+        // 이미지.setAttribute("내가 조작할 속성", "무엇으로 변경할지")
+        이미지.setAttribute("scr", "https://i.namu.wiki/i/ec0aWd_Sy0Kl6qMlnbEusxLqlrOYnUhNZ72JM_Lldw4Jt5PGkDS48vpp2ykK0yWtAM4pyKm0tvp_Smg70QWhWQAcFNg8NMjQAU354VoKZt6rKFSClnMz25cK0h16Q-McKIeGjH1m7DfvAXbCxA19PQ.webp")
+
+
+        //1번 버튼 클릭하면
+        버튼1클릭이벤트 발생 
+        
+        
+        //2번 버튼 클릭하면
+        버튼2클릭이벤트 발생
+        
+        
+        
+        //3번 버튼 클릭하면
+        버튼3클릭이벤트 발생
+
+    </script>
+</body>
+</html>

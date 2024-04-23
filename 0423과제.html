@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0413과제</title>
+</head>
+<body style="background-color: rgb(186, 193, 199);">
+    <h1 style="text-align: center;">주문페이지</h1>
+    <p style="color: rgb(61, 129, 145); text-align: center;">치킨 주문을 위한 페이지 입니다. 정확한 내용을 기재 바랍니다.</p>
+    <form action="">
+        <div style="background-color: white; width: 2000px; height: 800px; text-align: center; border-style: dotted; border-radius: 20px; margin-left: auto; margin-right: auto;">
+            <h2 style="font-size: 30px;">메뉴선택</h2>
+        <p style="color: rgb(61, 129, 145); ">사진을 누르면 메뉴가 선택됨</p>
+        <label><input type="radio" name="chicken" value=""><img src="https://i.namu.wiki/i/SOJcOlVl1yfX1ifPzBWB5yz7DuQS7IxrGC439SviFs2nhZBkiZLV9JNXULs_AQeNhuZzHRHQRB6YOiAQdh4XkO4asddI_E2qDrWJ9MHf87GSSPuLHJ_RXFwsrEs0_-jLrdZjDbdhQBw6bL72Ntb0PQ.webp" width="50px">간장티꾸닭</label>
+        <label><input type="radio" name="chicken" value=""><img src="https://i.namu.wiki/i/jLJu6WDKQ-bVjH7lVFGb42_5eDEdJOnDdtBxuOxM843Hn1YJ8w089stz_yu37aQIIHZiIWcHIqId_lvqoYnVK_m1Kx4Uf3anEqmE1cj5UwNccPZK-O2Yv5Z7EEpSVMwRRMdq_G8ULfOeB02JqhEGSg.webp" width="50px">스노우 어니언</label>
+        <label><input type="radio" name="chicken" value=""><img src="https://i.namu.wiki/i/FgIoV3TM2sv4Qi81utWg2la9mNUVlWXEI3ZXgTuiotllG9N4Bx_hx1-fTKxPioYWVVVfH5KFBLl7q08onN9SJOCAnE7p9p1j3unICoaoGtc8hPn3FXDpGFd13oXhf1QCSPgQmjUhfyqIr824urpg0g.webp" width="50px">양념</label>
+            <br><br><br>
+        <hr>
+        <br>
+        <h2>사이드 메뉴</h2>
+        <label for=""><input type="checkbox" name="사이드" value="">치즈볼</label>
+        <label for=""><input type="checkbox" name="사이드" value="">치킨무</label>
+        <label for=""><input type="checkbox" name="사이드" value="">머스타드소스</label>
+        <label for=""><input type="checkbox" name="사이드" value="">칠리소스</label>
+            <br><br>
+        <h2>선택사항</h2>
+        <label for=""><input type="checkbox" name="사이드" value="">비닐 장갑</label>
+        <label for=""><input type="checkbox" name="사이드" value="">나무젓가락 제외</label>
+        <label for=""><input type="checkbox" name="사이드" value="">치킨 무 제외 </label>
+        <label for=""><input type="checkbox" name="사이드" value="">소스 제외</label>
+    
+            
+                <label>맵기(1~5)<input type="range" min="1" max="5" step="1"> </label>
+                <br><br>
+                <label>소스양
+                    <select>
+                        <option value="1번선택">많음</option>
+                        <option value="2번선택">보통</option>
+                        <option value="3번선택">적음</option>
+                    </select>
+                </label>
+            <br><br><br>
+                <label for="">
+                    <h2>기타 희망사항</h2>
+                    <textarea name="" id="" cols="50" rows="5"></textarea>
+            </label>
+        </div>
+        <br><br>
+        <div style="background-color: white; width: 1970px; height: 500px; text-align: center; border-style: dotted; border-radius: 20px; margin-left: auto; margin-right: auto; padding: 20px;">
+            <h2>주문정보</h2>
+            <p style="color: rgb(61, 129, 145); ">주문자의 정보</p>
+            <div style="text-align: left;">
+            <label>주문자 성명<input placeholder="홍길동" required></label>
+            <br><br>
+            <label>전화번호<input placeholder="000-0000-0000" required></label>
+            <br><br>
+            <label>주소<input placeholder="oo동oo번지" required></label>
+            <br><br>
+            <label>쿠폰번호<input placeholder="0000-0000-0000" required></label>
+            <br><br>
+            <label>도착날짜 <input type="date"></label>
+            <br><br>
+            
+            <label><b>지불방법</b><input type="radio" name="지불방법" value="">카드</label>
+            <label><input type="radio" name="지불방법" value="">쿠폰</label>
+            <label><input type="radio" name="지불방법" value="">현금</label>
+                <br><br>
+            <label><b>카드사</b><input type="radio" name="카드사" value="">신한</label>
+            <label><input type="radio" name="카드사" value="">국민</label>
+            <label><input type="radio" name="카드사" value="">카카오</label>
+                <br><br>
+            <label>카드번호<input placeholder="000-0000-0000" required></label>
+</div>
+        </div>
+            <br><br>
+        <div style="background-color: white; width: 2015px; height: 350px; text-align: center; border-style: dotted; border-radius: 20px; margin-left: auto; margin-right: auto;">
+            <h1>개인정보 수집 및 이용 동의</h1>
+            <p style="color: rgb(61, 129, 145); ">주문 정보를 저장하기 위해 회원의 개인정보를 수집하고 있으며, 수집에 동의하지 않으면 주문이 불가능 합니다.</p>
+ <div style="text-align: left;">
+    <label><input type="radio" name="수락" value="">동의</label>
+    <label><input type="radio" name="수락" value="">거절</label>
+ </div>
+        <hr>
+        <h1>이벤트 문자 및 알림 수신</h1>
+        <p style="color: rgb(61, 129, 145); ">이벤트 및 각종 혜택 정보 제공을 위한 문자 전송을 수신합니다.</p>
+        <div style="text-align: left;">
+            <label><input type="radio" name="수신" value="">동의</label>
+            <label><input type="radio" name="수신" value="">거절</label>
+         </div>
+        </div>
+        <br>
+    <div style="text-align: center;">
+    <button type="submit" style="color: rgb(227, 228, 228); width: 150px; height: 70px; background-color: blue; border-radius: 10px; font-size: 25px;"><b>주문</b></button>
+    <button type="reset" style="color: rgb(159, 99, 26); width: 150px; height: 70px; background-color: aliceblue; border-radius: 10px; font-size: 25px;"><b>주문취소</b></button>
+</div>
+
+
+
+
+
+
+    </form>
+
+
+</body>
+</html>

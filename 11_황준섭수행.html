@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_황준섭과제</title>
+</head>
+<body>
+    <form action="">
+        
+            <div  style="width: 1000px; height: 650px; border-style: solid; border-radius: 10px; margin-left: auto; margin-right: auto;">
+                <h1 style="font-size: 40px;  text-align: center; color: rgb(211, 223, 34); font-style: normal; "> l   자신의 프로필을 설정해주세요</h1>
+                
+                <p style="color: rgb(30, 112, 112); margin: 10px;">각각의 항목에 정보를 입력하세요</p>
+                <hr>
+                <br>
+                <label for="성명" style="margin: 10px;"><b>성명</b><br><input type="text" style="margin: 10px;" placeholder="성명입력" required></label>
+                <br><br>
+                <label for="주소" style="margin: 10px;"><b>주소</b><br><input type="text" style="margin: 10px;" placeholder="주소입력" required></label>
+                <br><br>
+                <label for="연락처" style="margin: 10px;"><b>연락처</b><br><input type="text" style="margin: 10px;" placeholder="연락처입력" required></label>
+                <br><br>
+                <b style="margin: 10px;">생년월일</b>
+                <br><br>
+                <label style="margin: 10px;"> 연도 
+                    <select>
+                        <option value="1번 선택">2000년</option>
+                        <option value="2번 선택">2001년</option>
+                        <option value="3번 선택">2002년</option>
+                        <option value="4번 선택">2003년</option>
+                        <option value="5번 선택">2004년</option>
+                        <option value="6번 선택">2005년</option>
+                        <option value="7번 선택">2006년</option>
+                    </select>
+                    <label style="margin: 10px;"> 월    
+                        <select>
+                            <option value="1번 선택">1</option>
+                            <option value="2번 선택">2</option>
+                            <option value="3번 선택">3</option>
+                            <option value="4번 선택">4</option>
+                            <option value="5번 선택">5</option>
+                            <option value="6번 선택">6</option>
+                            <option value="7번 선택">7</option>
+                            <option value="8번 선택">8</option>
+                            <option value="9번 선택">9</option>
+                            <option value="10번 선택">10</option>
+                            <option value="11번 선택">11</option>
+                            <option value="12번 선택">12</option>
+                        </select>
+                        <label style="margin: 10px;"><input type="text" style="width: 40px;" >일</label>
+                <br><br>
+                <p style="margin: 10px;"><b>성별</b></p>
+                <label style="margin: 10px;"><input type="radio" name="성별" value="성별">남</label>
+                <label style="margin: 10px;"><input type="radio" name="성별" value="성별">여</label>
+                <br>
+                <p style="margin: 10px;"><b>이메일</b></p>
+                <label style="margin: 10px;"><input placeholder="이메일 입력" required></label>
+            </div>  
+        <br><br>
+            <div style="width: 1000px; height: 820px; border-style: solid; border-radius: 10px; margin-left: auto; margin-right: auto;">
+                <h1 style="font-size: 40px;  text-align: center; color: rgb(211, 223, 34); "> l   자신을 소개해 주세요</h1>
+                <p style="color: rgb(30, 112, 112); margin: 10px;">아래의 물음에 답하세요</p>
+                <hr>
+                <br><br>
+                <b style="margin: 10px;">가장 마음에 드는 문구를 고르세요</b>
+                <br><br>
+                <label style="margin: 10px;"><input type="radio" name="문구" value="문구">어렵게 생각하지 말고 끝 까지 하면 된다. 희망을 가지고 간절하게 하면 된다.</label>
+                <br><br>
+                <label style="margin: 10px;"><input type="radio" name="문구" value="문구">신념을 가지면 어떤 어려움에도 흔들리지 않는다.</label>
+                <br><br>
+                <label style="margin: 10px;"><input type="radio" name="문구" value="문구">"시계처럼 살아라." - 이는 시계처럼 꾸준히 가라는 것이다. 시계처럼 시간도 지켜라.</label>
+                <br><br>
+                <label style="margin: 10px;"><input type="radio" name="문구" value="문구">인생에 건너뛰기가 없고 순각 나는 비약도 없다.</label>
+                <br><br>
+                <label for="">
+                    <b style="margin: 10px;">위 문구를 선택한 이유를 쓰세요</b>
+                    <br><br>
+                    <textarea name="" id="" cols="140" rows="10" style="margin: 10px; ">500자 이내</textarea>
+            </label>
+            <br><br>
+            <b style="margin: 10px;">자신의 진로 분야를 선택하세요</b>
+            <br><br>
+        <label style="margin: 10px;"><input type="checkbox" name="진로" value="진로">프론트</label>
+        <label style="margin: 10px;"><input type="checkbox" name="진로" value="진로">보안</label>
+        <label style="margin: 10px;"><input type="checkbox" name="진로" value="진로">백엔드</label>
+        <label style="margin: 10px;"><input type="checkbox" name="진로" value="진로">인공지능</label>
+        <label style="margin: 10px;"><input type="checkbox" name="진로" value="진로">해커</label>
+        <label style="margin: 10px;"><input type="checkbox" name="진로" value="진로">기타</label>
+        <br><br>
+        <b style="margin: 10px;">개발자가 되기위한 자신의 공부 우선 순위</b>
+        <br><br>
+        <label for="1." style="margin: 10px;">1. <input type="text" name="순위" id="순위" required></label>
+        <label for="2.">2. <input type="text" name="순위" id="순위" required></label>
+        <label for="3.">3. <input type="text" name="순위" id="순위" required></label>
+        
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <button type="submit" style="color: rgb(255, 255, 255); width: 150px; height: 70px; background-color: rgb(7, 239, 111); border-radius: 10px; font-size: 25px;"><b>제출</b></button>
+        <button type="reset" style="color: rgb(255, 255, 255); width: 150px; height: 200p  ; background-color: rgb(5, 244, 152); border-radius: 10px; font-size: 25px;"><b>초기화</b></button>
+    </div>
+    
+        </form>
+</body>
+</html> 
+
+

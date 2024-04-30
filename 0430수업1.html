@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9회차 선택자 가상 클래스</title>
+
+<style>
+    .box1 {width: 600px; height: 600px; background-color: rgb(128, 92, 191);}
+    .box2 {width: 400px; height: 300px; background-color: bisque;}
+
+    .box1 > h1 {color: blue;}
+    .box1 h1 {border: 2px solid #fff;}
+
+p:hover {background-color: cadetblue;} 
+p:active {background-color: rgb(113, 75, 75);}
+
+</style>
+
+</head>
+<body>
+    <div class="box1">
+        <h1>box1의 h1태그1</h1>
+        <h1>box1의 h1태그2</h1>
+        <h2>box1의 h1태그1</h2>
+        <h2>box1의 h1태그2</h2>
+    <div class="box2">
+        <h1>box2의 h1태그1</h1>
+        <h1>box2의 h1태그1</h1>
+        <h2>box2의 h1태그1</h2>
+        <h2>box2의 h1태그1</h2>
+    </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor neque consequuntur sit autem. Voluptates quam molestias corrupti ad. Quis repudiandae blanditiis delectus voluptatum sit officiis ad reiciendis quae, inventore at!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo assumenda vero dolore optio at voluptate eos amet suscipit velit minus! Temporibus modi porro quis ab at accusamus tempore aut quod.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima asperiores fuga corrupti libero porro beatae tenetur illo deleniti unde vitae, expedita saepe? Animi voluptates odit sapiente! Aliquam consectetur ratione officia?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vitae ex aliquam assumenda quisquam dicta fugiat veritatis vero eligendi facilis ratione provident tempore, similique sint in nam natus quia reprehenderit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam iste laudantium asperiores vitae labore veritatis magni sed. Error, vel fuga! Itaque, quos laudantium. Error explicabo, consequuntur commodi suscipit mollitia deserunt?</p>
+</body>
+</html>

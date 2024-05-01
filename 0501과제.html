@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0501과제</title>
+</head>
+<style>
+    h1 {font-size: 30pt;}
+</style>
+
+<body>
+    <h1>BMI 테스트</h1>
+    <label>키<input id="tall" type="text" style="margin: 10px;"></label>
+    <br>
+    <label>체중<input id="weight" type="text" style="margin: 10px;"></label>
+    <br><br>
+    <button>계산</button>
+    <hr>
+    <h1>BMI 수치 :</h1>
+
+    <script>
+        let 키 = document.querySelector("#tall");
+        let 몸무게 = document.querySelector("#weight");
+        let 버튼 = document.querySelector("button");
+        버튼.addEventListener("click ", function(){
+            let 키키 = 키.value;
+            let 몸몸무게 = 몸무게.value;
+            let bmi = 몸몸무게/(키키/100*키키/100);
+            console.log(bmi);
+        });
+    </script>
+</body>
+</html>

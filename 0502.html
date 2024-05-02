@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0502블록레벨과 인라인레벨 태그</title>
+
+<style>
+    .box {
+        width: 250px; height: 250px; border: 1px soli #000d;
+        background-color: antiquewhite;
+        display: inline-block;
+        overflow: auto;
+    }
+    a { display: block;}
+</style>
+
+
+</head>
+<body>
+    <h1>블록 레벨</h1>
+    <p>블록 레벨 태그 : 본인의 덩치와 상관없이 한 줄 전체를 차지하는 태그</ㅔ>
+    <p>태그하나에 무조건 한줄을 차지한다</p>
+    <p>종류: h1~h6 p ul ol li table-tr div 시맨틱 태그</p>
+
+
+
+    <h1>인라인(in-line) 레벨</h1>
+    <p>인라인 레벨 태그 : 본인의 덩치만큼만 영역을 차지하는 태그</p>
+    <p>그래서 width, height 못줌</p>
+    <p>margin과 padding은 좌우로만 적용할수있음</p>
+    <h3>종류: a img label-input span button</h3>
+    
+    <a href="#" style="background-color: aqua; width: 200px; height: 200px;">a태그</a>
+    <a href="#" style="background-color: aqua; width: 200px; height: 200px;">a태그</a>
+    <a href="#" style="background-color: aqua; width: 200px; height: 200px;">a태그</a>
+
+    <h1>인라인 - 블록레벨의 공존가능?</h1>
+    <h3>블록레벨 태그 안에 인라인 레벨 태그 들어갈 수 있는가?</h3>
+    <h3>인라인레벨 안에 블록레벨 들어갈수 있는가? 안됨</h3>
+    <h3>블록레벨 안에 블록레벨 들어갈수 있음</h3>
+    <a href=""><img src="/ai-/핑쿠.jpg" alt=""></a>
+
+    <div class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus animi quam, saepe ab repellendus nemo tempore, est hic repudiandae earum libero dolore fugiat rerum ratione ad. Rem nulla unde minus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consectetur ratione laudantium fugit qui modi laborum sed! Dolores qui pariatur, corporis facere ipsa corrupti earum aut illum, quae deserunt in.</div>
+    <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate repellendus eaque nam sed voluptatibus, reiciendis reprehenderit quidem expedita accusamus assumenda facilis obcaecati nostrum iste ullam, necessitatibus mollitia, sint doloremque aut.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto cumque tenetur facilis non, harum ipsa, mollitia iure aperiam consequatur delectus porro, est corrupti rerum eum. Suscipit dolorem sint at exercitationem.</div>
+
+
+
+</body>
+</html>

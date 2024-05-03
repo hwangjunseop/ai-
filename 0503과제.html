@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제</title>
+
+<style>
+    .box { width: 200px; height: 200px; border: 1px solid #000; text-align: center; font-weight: 700; font-size: 35px; display: inline-block; }
+    img {width: 100px; height: 100px;}
+
+    button { "width: 170px; height: 40px; font-size: 20px;"}
+</style>
+
+</head>
+<body>
+    <h1>마우스로 술래잡기</h1>
+    <button class="start">술래잡기시작</button>  <button class="end">술래잡기 정지</button>
+<br><br>
+<div class="box">박스1</div>
+<div class="box">박스2</div>
+<div class="box">박스3</div>
+
+<script>
+    let 박스1 = document.querySelector(".box1")
+    let 박스2 = document.querySelector(".box2")
+    let 박스3 = document.querySelector(".box3")
+    
+    let apple = document.querySelector(".start")
+    apple.addEventListener("click", function() {
+    })
+    let 이미지 = document.createAttribute("img")
+    이미지.setAttribute("src", "/img")
+    박스1.appendChild(이미지)
+이미지.addEventListener(" mouseover", function() {
+    console.log("마우스 갖다뎄음")
+if (지금위치 == 1) {
+    박스2.appendChild(이미지)
+    지금위치 =2
+}
+else if (지금위치 == 2) {
+    박스3.appendChild(이미지)
+    지금위치 =3
+}
+else if (지금위치 == 3) {
+     박스1.appendChild(이미지)
+     지금위치 =1
+}
+
+})
+
+
+let 정지버튼 = document.querySelector(".end")
+
+정지버튼.addEventListener("click", function() {
+    박스1.removeChild(이미지)
+}
+
+})
+
+
+
+</script>
+
+
+
+</body>
+</html>

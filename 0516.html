@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+</head>
+
+<style>
+    p::before{
+        content: "best";
+        background-color: red; color: aliceblue;
+        padding: 3px; margin-right: 5px;
+        border-radius: 8px;
+    }
+
+    p::after {
+        background-color: blue; color: aliceblue;
+        border-radius: 8px;
+        padding: 3px; margin-right: 5px;
+        content: "sold out";
+    }
+
+    p::selection {
+        background-color: azure;
+    }
+
+    p::first-letter{
+        color: black;
+    }
+</style>
+
+
+<body>
+    <h1>가상요소</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores reprehenderit, voluptate aperiam, ratione doloremque aspernatur eos necessitatibus reiciendis modi, minima sint culpa provident dolorum quibusdam dolores fugit voluptates nobis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores reprehenderit, voluptate aperiam, ratione doloremque aspernatur eos necessitatibus reiciendis modi, minima sint culpa provident dolorum quibusdam dolores fugit voluptates nobis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores reprehenderit, voluptate aperiam, ratione doloremque aspernatur eos necessitatibus reiciendis modi, minima sint culpa provident dolorum quibusdam dolores fugit voluptates nobis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores reprehenderit, voluptate aperiam, ratione doloremque aspernatur eos necessitatibus reiciendis modi, minima sint culpa provident dolorum quibusdam dolores fugit voluptates nobis.</p>
+</body>
+</html>

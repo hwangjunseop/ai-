@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체</title>
+</head>
+<body>
+    <script>
+        // 객체 : 변수안에 여러개의 데이터를 붙여서 집어넣는것
+        let 황준섭
+        황준섭 = {
+            이름:"황준섭",
+            키:180,
+            학교:"염광고",
+            몸무게:70,
+            월급:1000000,
+        }
+
+        let 김형준 = {
+            이름:"김형준",
+            키:"171",
+
+        }
+        console.log(황준섭)
+        console.log(황준섭.월급)
+
+        //JSON
+        let 김유찬 = {
+            "이름" : "김유찬",
+            "키" : 165,
+            "학교" : "신현고",
+            "몸무게" : 50,
+            "월급" : 0,
+            "졸업학교" : {
+                "초등학교": "동원초",
+                "중학교": "동원중",
+                "고등학교": "신현고",
+            }
+        }
+        console.log(김유찬.출신학교.동원초)
+
+        let 황준섭JSON = JSON.stringify(황준섭)
+        console.log(황준섭JSON)
+
+        let 다시황준섭 = JSON.parse(황준섭JSON)
+        console.log(다시황준섭)
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flwx배우는 시간</title>
+
+<style>
+    #wrap {
+        /* flex는 부모에게*/
+            display: flex;
+            justify-content: space-evenly;                            /* 가로정렬*/
+            align-items: center; /* 새로정렬 */
+    }
+    
+    .box {
+        width: 300px; background-color: burlywood; border: 5px solid #000;
+    }
+
+    .box1 {height: 100px; flex: 1; order: 2;}
+    .box2 {height: 200px; flex: 8; order: 1;}
+    .box3 {height: 300px; flex: 1; order: 3;}
+</style>
+
+
+
+
+</head>
+<body>
+    <div id="wrap">
+      <div class="box box1"><h1>박스1</h1></div>
+      <div class="box box2"><h1>박스2</h1></div>
+      <div class="box box3"><h1>박스3</h1></div>
+    </div>
+</body>
+</html>

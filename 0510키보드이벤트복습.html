@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키보드 이벤트 복습하기</title>
+</head>
+<body>
+    
+    <script>
+        // 마우스이벤트 : 대상이 있음
+        // 키보드이벤트 : 대상이 페이지 전체로 가능
+
+        // 키누르는 것 : keydown ,keypress 영어기준
+        // 키 떄는 것 : keyup 아시아권 문자처기 ㄱㄴ
+        document.addEventListener("keydown", function(e) {
+            console.log("key down 이벤트 발생")
+            console.log(e)
+        })
+        document.addEventListener("keyup", function() {
+            console.log("key down 이벤트 발생")
+        })
+    </script>
+
+</body>
+</html> 

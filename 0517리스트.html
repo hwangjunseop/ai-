@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo 리스트 프로젝트</title>
+
+<style>
+    * {
+        margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    header {
+        color: #e11313;
+        display: flex;
+        align-items: center; justify-content: space-between;
+       background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 10px;
+    }
+
+    input {border: none; border-radius: 5px; padding: 5px;}
+
+    .todo-list {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        
+        border-bottom: 1px solid #a8ff78;
+    }
+    
+    .like {flex: 1; color: rebeccapurple ;}
+    .content {flex: 8;}
+    .manage {flex: 1;}
+</style>
+
+
+</head>
+<body>
+    <div id="wrap"></div>
+    <header>
+        <h1>todo</h1>
+        <label>할일 입력 <input type="text"></label>
+    </header>
+
+    <section>
+        <div class="todo-list">
+            <p class="like">좋아요</p>
+            <p class="content">내용</p>
+            <div class="manage">v랑 x자리</div>
+        </div>
+    </section>
+</body>
+</html>

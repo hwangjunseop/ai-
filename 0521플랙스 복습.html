@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플랙스 복습</title>
+</head>
+
+<style>
+    .parent {display: flex; justify-content: space-evenly; align-items: center;}
+    .box {width: 200px; height: 200px; border: 3px solid #000 }
+</style>
+
+<body>
+    <h1>float 로 박스를 좌우로 나열 -> float 적용한 놈 밑네 있는 다른 개체들도 영양을 받음 clear을 써야함</h1>
+    <h1>display: inline-block 오로 박스를 나열 글씨로 취급되서 글씨간 여백이 자동으로 생김</h1>
+
+    <div class="parent">
+        <div class="box" style="height: 300px; flex: 4;"><h2>1번</h2></div>
+        <div class="box" style="height: 100px;flex: 1;"><h2>2번</h2></div>
+        <div class="box" style="flex: 1;"><h2>3번</h2></div>
+    </div>
+</body>
+</html>

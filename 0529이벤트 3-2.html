@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+
+    <h5>셀렉</h5>
+    <select value="1">선택1</select>
+    <select value="2">선택2</select>
+    <select value="3">선택3</select>
+
+    <script>
+        const 입력 = document.querySelector("input")
+        입력.addEventListener("change", (event) => {
+            console.log("chang 이벤트 발생")
+            console.log(event)
+        })
+
+
+        const 셀렉 = document.querySelector("select")
+        입력.addEventListener("change", (event) => {
+            console.log("select에서 change발생")
+            console.log(event)
+        })
+    </script>
+</body>
+</html>

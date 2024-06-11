@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>트렌스폼</title>
+
+    <style>
+        div {width: 100px; height: 50px;
+        background-color: antiquewhite; margin: 20px; border: 2px solid #000;
+        }
+        .translate{ transform: translate(50px , 10px);}
+
+        .usage {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50% );}
+
+        .transition { width: 100px; height: 100px; background-color: azure;
+            transition: background-color 1s ease 2s;
+        }
+        .transition:hover {background-color: blue;}
+    </style>
+</head>
+<body>
+    <h2>transform : 디자인 바뀌는 것</h2>
+    <div class="translate">translate</div>
+    <div class="rotate">rotate</div>
+    <div class="scale">scale</div>
+    <div class="skew">skew</div>
+    <div class="usage">용도</div>
+    <div class="transition">d</div>
+</body>
+</html>
